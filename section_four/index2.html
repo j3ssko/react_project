@@ -17,6 +17,18 @@
     <div id="app">React has not rendered yet.</div>
     <script type="text/babel">
 
+    class Shapes extends React.Component {
+        render() {
+            return(
+                <div>
+                    <Circle/>
+                    <Square/>
+                    <Rectangle/>
+                </div>
+            );
+        }
+    }
+
     class Circle extends React.Component {
         render() {
             var circleStyle = {
@@ -59,9 +71,7 @@
 
     ReactDOM.render(
         <div>
-            <Circle/>
-            <Square/>
-            <Rectangle/>
+            <Shapes/>
         </div>,
         document.getElementById("app")
     );

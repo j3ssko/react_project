@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- REACT DOM LIBRARY -->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <!-- FONT AWESOME -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+    <title>Capstone Project</title>
+
+</head>
+<body>
+
+    <div id="app">React has not rendered yet.</div>
+
+    <script type="text/babel">
+
+    // friendly complex
+
+    function Friendly() {
+        var friendlyStyle = {
+            width: 400,
+            padding: 0,
+            backgroundColor: "#eee",
+            margin: "0 auto"
+        }
+        return(
+            <div style={friendlyStyle}>
+                <Avatar/>
+                <UserName/>
+                <GetConnected/>
+            </div>
+        );
+    }
+
+    // avatar 
+
+    function Avatar() {
+        var avatarStyle = {
+            width: 300,
+            height: 300,
+            display: "block",
+            margin: "100px auto 0",
+            paddingTop: 20,
+            borderRadius: "50%"
+        }
+        return(
+            <img style={avatarStyle} src="https://pbs.twimg.com/profile_images/1037541873634734080/Tp2uM9Qe_400x400.jpg"/>
+        );
+    }
+
+    // userame
+
+    function UserName() {
+        var nameStyle = {
+            fontFamily: "'Roboto', sans-serif",
+            textAlign: "center"
+        }
+
+        var headerStyle = {
+            fontWeight: 300,
+        }
+
+        return(
+            <div style={nameStyle}>
+                <h1>Jess Koch</h1>
+                <h2 style={headerStyle}>Senior Front-End Developer</h2>
+            </div>
+        );
+    }
+
+    var iconStyle = {
+        color: "black",
+        margin: 10,
+        paddingBottom: 20,
+    }
+
+    // connect complex
+
+        function GetConnected() {
+            var getConnectedStyle = {
+                display: "block",
+                margin: "0 auto",
+                textAlign: "center"
+            }
+            return (
+                <div style={getConnectedStyle}>
+                    <Website/><LinkedIn/><Twitter/><Instagram/>
+                </div>
+            );
+        }
+
+        // like
+
+        function Website() {
+            return(
+                <a href="http://www.jesskoch.com" target="_blank"><i style={iconStyle} className="fa fa-globe" aria-hidden="true"></i></a>
+            );
+        }
+
+        function Twitter() {
+            return(
+                <a href="https://twitter.com/jkochwrites" target="_blank"><i style={iconStyle} className="fa fa-twitter" aria-hidden="true"></i></a>
+            );
+        }
+
+        function Instagram() {
+            return(
+                <a href="https://www.instagram.com/inwildwoods/" target="_blank"><i style={iconStyle} className="fa fa-instagram" aria-hidden="true"></i></a>
+            );
+        }
+
+        function LinkedIn() {
+            return(
+                <a href="https://www.linkedin.com/in/jesslkoch/" target="_blank"><i style={iconStyle} className="fa fa-linkedin" aria-hidden="true"></i></a>
+            );
+        }
+
+        // share
+
+        // add
+
+    ReactDOM.render(
+        <Friendly/>,
+        document.getElementById("app")
+    );
+    </script>
+
+</body>
+</html>
