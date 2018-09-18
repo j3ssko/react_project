@@ -15,12 +15,12 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
-    <title>Capstone Project</title>
+    <title>Social Card</title>
 
 </head>
 <body>
 
-    <div id="app">React has not rendered yet.</div>
+    <div id="app"></div>
 
     <script type="text/babel">
 
@@ -31,7 +31,8 @@
             width: 400,
             padding: 0,
             backgroundColor: "#eee",
-            margin: "0 auto"
+            margin: "0 auto",
+            borderRadius: 6
         }
         return(
             <div style={friendlyStyle}>
@@ -67,19 +68,22 @@
         }
 
         var headerStyle = {
-            fontWeight: 300,
+            fontSize: 20,
+            fontWeight: 300
         }
 
         return(
             <div style={nameStyle}>
                 <h1>Jess Koch</h1>
-                <h2 style={headerStyle}>Senior Front-End Developer</h2>
+                <h2 style={headerStyle}>Front-End Developer</h2>
+                <p>(trying to figure out react)</p>
             </div>
         );
     }
 
     var iconStyle = {
         color: "black",
+        fontSize: 20,
         margin: 10,
         paddingBottom: 20,
     }
