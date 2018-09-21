@@ -24,8 +24,6 @@
 
     <script type="text/babel">
 
-    // friendly complex
-
     function Friendly() {
         var friendlyStyle = {
             width: 400,
@@ -43,7 +41,6 @@
         );
     }
 
-    // avatar 
 
     function Avatar() {
         var avatarStyle = {
@@ -59,7 +56,6 @@
         );
     }
 
-    // userame
 
     function UserName() {
         var nameStyle = {
@@ -88,55 +84,51 @@
         paddingBottom: 20,
     }
 
-    // connect complex
 
-        function GetConnected() {
-            var getConnectedStyle = {
-                display: "block",
-                margin: "0 auto",
-                textAlign: "center"
-            }
-            return (
-                <div style={getConnectedStyle}>
-                    <Website/><LinkedIn/><Twitter/><Instagram/>
-                </div>
-            );
+    function GetConnected() {
+        var getConnectedStyle = {
+            display: "block",
+            margin: "0 auto",
+            textAlign: "center"
         }
+        return (
+            <div style={getConnectedStyle}>
+                <Website/><LinkedIn/><Twitter/><Instagram/>
+            </div>
+        );
+    }
 
-        // like
 
-        function Website() {
-            return(
-                <a href="http://www.jesskoch.com" target="_blank"><i style={iconStyle} className="fa fa-globe" aria-hidden="true"></i></a>
-            );
-        }
+    function Website() {
+        return(
+            <a href="http://www.jesskoch.com" target="_blank"><i style={iconStyle} className="fa fa-globe" aria-hidden="true"></i></a>
+        );
+    }
 
-        function Twitter() {
-            return(
-                <a href="https://twitter.com/jkochwrites" target="_blank"><i style={iconStyle} className="fa fa-twitter" aria-hidden="true"></i></a>
-            );
-        }
+    function Twitter() {
+        return(
+            <a href="https://twitter.com/jkochwrites" target="_blank"><i style={iconStyle} className="fa fa-twitter" aria-hidden="true"></i></a>
+        );
+    }
 
-        function Instagram() {
-            return(
-                <a href="https://www.instagram.com/inwildwoods/" target="_blank"><i style={iconStyle} className="fa fa-instagram" aria-hidden="true"></i></a>
-            );
-        }
+    function Instagram() {
+        return(
+            <a href="https://www.instagram.com/inwildwoods/" target="_blank"><i style={iconStyle} className="fa fa-instagram" aria-hidden="true"></i></a>
+        );
+    }
 
-        function LinkedIn() {
-            return(
-                <a href="https://www.linkedin.com/in/jesslkoch/" target="_blank"><i style={iconStyle} className="fa fa-linkedin" aria-hidden="true"></i></a>
-            );
-        }
+    function LinkedIn() {
+        return(
+            <a href="https://www.linkedin.com/in/jesslkoch/" target="_blank"><i style={iconStyle} className="fa fa-linkedin" aria-hidden="true"></i></a>
+        );
+    }
 
-        // share
-
-        // add
 
     ReactDOM.render(
         <Friendly/>,
         document.getElementById("app")
     );
+    
     </script>
 
 </body>
