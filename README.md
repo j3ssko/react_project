@@ -10,3 +10,4 @@ React, JSX, HTML.
 
 ## Preview
 
+![Screenshot](images/app_screenshot.png)
